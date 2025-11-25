@@ -7,8 +7,8 @@ export default function Saudacao({nome}){
     
 
     return(
-        <text style={{fontSize:18, marginBottom:5}}>
+        <Text style={{fontSize:18, marginBottom:5}}>
             ola {nome}
-        </text>
+        </Text>
     )
 }

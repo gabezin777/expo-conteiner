@@ -1,11 +1,13 @@
 import React from "react";
-import {image} from "react-native";
+import { Image } from "react-native";
+import fotos from '../img/Fotos';
+import estilos from '../style/style';
 
-export default function FotoPerfil (){
-    return(
-        <image
-            source={('../img/base.jpg')}
-            style={{ width: 100, height: 100, borderRadius:50, marginBottom: 10}}
-            />
-    )
+export default function FotoPerfil({ img = 'perfil00' }) {
+    return (
+        <Image
+            source={fotos[img]}
+            style={estilos.foto}
+        />
+    );
 }
